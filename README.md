@@ -1,59 +1,39 @@
-# UniversitySite
+# University Site
+Detta projekt handlar om att skapa  en enkel Angular-applikation för att hantera kurser för en universitet. Syftet med projektet är att träna på grundläggande kunskaper inom Angular-utveckling, och ha bättre kunskaper i :
+- Användning av Angular CLI
+- Routing mellan flera sidor
+- Databindning
+- Användning av komponenter
+- CSS-styling
+- Publicering via GitHub Pages
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
+## Sidorna i projketet
+Projektet innehåller två sidor:
+- En sida för att söka efter kurser
+- En sida för att visa ett schema (ramschema)
 
-## Development server
+## krav för kurser sidan 
+- kunna sortera data på kurskod, kursnamn, poäng, ämne.
+- filtrera data på kurskod och kursnamn.
+- välja ut kurser från ämne - exempelvis; bara visa kurser som tillhör ämnet "Datateknik".
+- lägga till kurser till eget ramschema. 
+- se antal kurser i aktuell sökning, exempelvis alla kurser, eller antal kurser i valt urval. 
 
-To start a local development server, run:
+## krav för ramscchema sidan 
+- se valda kurser till ramschemat (dessa ska lagras i localStorage).
+- se antal sammanlagda högskolepoäng för de valda kurserna. 
+- plocka bort kurser från ramschemat.
+
+## Viktig information
+
+Projektet syftar till **grundläggande betyg**. Därför har **inga extra funktioner eller avancerade implementationer** lagts till. Fokus har varit på att visa förståelse för Angulars grundläggande struktur och funktionalitet.
+
+## Installation
+
+För att köra projektet lokalt:
 
 ```bash
+git clone https://github.com/ditt-anvandarnamn/university-site.git
+cd university-site
+npm install
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
